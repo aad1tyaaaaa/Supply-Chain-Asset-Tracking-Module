@@ -1,0 +1,28 @@
+{% extends 'assets/base.html' %}
+{% block title %}Assets - Asset Tracking{% endblock %}
+{% block content %}
+  <h1>Assets</h1>
+  <p><a class="btn btn-primary" href="{% url 'asset_create' %}">Create asset</a></p>
+  <table class="table table-hover">
+    <thead><tr><th>Name</th><th>Value</th><th>Created</th><th></th></tr></thead>
+    <tbody>
+      {% for a in assets %}
+        <tr>
+          <td><a href="{% url 'asset_detail' a.pk %}">{{ a.name }}</a></td>
+          <td>{{ a.value }}</td>
+          <td>{{ a.created_at }}</td>
+          <td><a href="{% url 'asset_update' a.pk %}">Edit</a> | <a href="{% url 'asset_delete' a.pk %}">Delete</a></td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="4">No assets</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if is_paginated %}
+    <nav aria-label="Page navigation"><ul class="pagination">
+      {% if page_obj.has_previous %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>{% endif %}
+      <li class="page-item active"><span class="page-link">{{ page_obj.number }}</span></li>
+      {% if page_obj.has_next %}<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>{% endif %}
+    </ul></nav>
+  {% endif %}
+{% endblock %}

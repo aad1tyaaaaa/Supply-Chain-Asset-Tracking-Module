@@ -1,0 +1,15 @@
+{% extends 'assets/base.html' %}
+{% block title %}{{ asset.name }} - Asset Tracking{% endblock %}
+{% block content %}
+  <h1>{{ asset.name }}</h1>
+  <p>{{ asset.description }}</p>
+  <p><strong>Value:</strong> {{ asset.value }}</p>
+  <h3>Location history</h3>
+  <ul class="list-group">
+    {% for al in asset.locations.all %}
+      <li class="list-group-item">{{ al.location.name }} — {{ al.timestamp }}</li>
+    {% empty %}
+      <li class="list-group-item">No movements recorded</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

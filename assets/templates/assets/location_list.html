@@ -1,0 +1,16 @@
+{% extends 'assets/base.html' %}
+{% block title %}Locations - Asset Tracking{% endblock %}
+{% block content %}
+  <h1>Locations</h1>
+  <p><a class="btn btn-primary" href="{% url 'location_create' %}">Create location</a></p>
+  <ul class="list-group">
+    {% for l in locations %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="{% url 'location_detail' l.pk %}">{{ l.name }}</a>
+        <span class="badge bg-secondary">{{ l.asset_count }}</span>
+      </li>
+    {% empty %}
+      <li class="list-group-item">No locations</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

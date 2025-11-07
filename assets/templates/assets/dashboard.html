@@ -1,0 +1,47 @@
+{% extends 'assets/base.html' %}
+{% block title %}Dashboard - Asset Tracking{% endblock %}
+{% block content %}
+  <h1>Dashboard</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card mb-3"><div class="card-body"><h5>Total assets</h5><p class="h3">{{ total_assets }}</p></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3"><div class="card-body"><h5>Total locations</h5><p class="h3">{{ total_locations }}</p></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3"><div class="card-body"><h5>Total movements</h5><p class="h3">{{ total_movements }}</p></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card mb-3"><div class="card-body"><h5>Total value</h5><p class="h3">{{ total_value }}</p></div></div>
+    </div>
+  </div>
+
+  <h2>Recent Movements</h2>
+  <table class="table table-striped">
+    <thead><tr><th>Asset</th><th>Location</th><th>When</th></tr></thead>
+    <tbody>
+      {% for m in recent_movements %}
+        <tr>
+          <td>{{ m.asset.name }}</td>
+          <td>{{ m.location.name }}</td>
+          <td>{{ m.timestamp }}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="3">No recent movements</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Top Locations</h2>
+  <ul class="list-group">
+    {% for loc in assets_per_location %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="{% url 'location_detail' loc.pk %}">{{ loc.name }}</a>
+        <span class="badge bg-primary rounded-pill">{{ loc.asset_count }}</span>
+      </li>
+    {% empty %}
+      <li class="list-group-item">No locations</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

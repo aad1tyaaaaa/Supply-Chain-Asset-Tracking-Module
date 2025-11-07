@@ -1,0 +1,21 @@
+{% extends 'assets/base.html' %}
+{% block title %}Movements - Asset Tracking{% endblock %}
+{% block content %}
+  <h1>Movements</h1>
+  <p><a class="btn btn-primary" href="{% url 'assetlocation_create' %}">Record movement</a></p>
+  <table class="table table-sm">
+    <thead><tr><th>Asset</th><th>Location</th><th>When</th><th></th></tr></thead>
+    <tbody>
+      {% for m in assetlocations %}
+        <tr>
+          <td>{{ m.asset.name }}</td>
+          <td>{{ m.location.name }}</td>
+          <td>{{ m.timestamp }}</td>
+          <td><a href="{% url 'assetlocation_update' m.pk %}">Edit</a> | <a href="{% url 'assetlocation_delete' m.pk %}">Delete</a></td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="4">No movements</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
