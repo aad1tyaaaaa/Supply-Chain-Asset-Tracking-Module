@@ -12,9 +12,6 @@ A robust Django-based application for tracking assets and their movements across
 <img src="https://img.shields.io/badge/PostgreSQL-15-4CC9F0?style=for-the-badge&logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/Redis-7-FF1744?style=for-the-badge&logo=redis&logoColor=white" />
 <img src="https://img.shields.io/badge/NGINX-Reverse%20Proxy-26A69A?style=for-the-badge&logo=nginx&logoColor=white" />
-
-<br/><br/>
-
 <!-- 🚀 DevOps & Build --> 
 <p align="center">
 <img src="https://img.shields.io/badge/CI%20Pipeline-GitHub%20Actions-6A5ACD?style=for-the-badge&logo=githubactions&logoColor=white" />
@@ -337,6 +334,7 @@ If you have any questions or need help, please:
 - [ ] Add export functionality (CSV/PDF)
 - [ ] Mobile-responsive design improvements
 - [ ] Advanced reporting and analytics
+
 
 
 
