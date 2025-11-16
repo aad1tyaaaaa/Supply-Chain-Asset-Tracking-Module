@@ -4,50 +4,52 @@ A robust Django-based application for tracking assets and their movements across
 
 ## 🏷️ Badges
 
- <!-- 🔥 Core Tech Stack -->
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Django-5.2.8-0C4B33?style=for-the-badge&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-15-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-7-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/NGINX-Reverse%20Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+ <p align="center">
 
-  <br/><br/>
+<!-- 🔥 Core Tech Stack -->
+<img src="https://img.shields.io/badge/Python-3.11+-2E7DFF?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-5.2.8-00C853?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-15-4CC9F0?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-7-FF1744?style=for-the-badge&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/NGINX-Reverse%20Proxy-26A69A?style=for-the-badge&logo=nginx&logoColor=white" />
 
-  <!-- 🚀 DevOps & Build -->
-  <img src="https://img.shields.io/github/actions/workflow/status/<your-org-or-user>/<repo>/ci.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Pipeline" />
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-Compatible-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<br/><br/>
 
-  <br/><br/>
+<!-- 🚀 DevOps & Build -->
+<img src="https://img.shields.io/badge/CI%20Pipeline-GitHub%20Actions-6A5ACD?style=for-the-badge&logo=githubactions&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-Ready-0288D1?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-Compatible-005CFF?style=for-the-badge&logo=kubernetes&logoColor=white" />
 
-  <!-- 📦 Code Quality -->
-  <img src="https://img.shields.io/badge/Flake8-Linting-1F75FE?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Black-Code%20Formatter-000000?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Coverage-90%25-brightgreen?style=for-the-badge&logo=codecov&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tested%20With-Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
+<br/><br/>
 
-  <br/><br/>
+<!-- 📦 Code Quality -->
+<img src="https://img.shields.io/badge/Flake8-Linting-448AFF?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Black-Formatter-000000?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Coverage-90%25-00E676?style=for-the-badge&logo=codecov&logoColor=white" />
+<img src="https://img.shields.io/badge/Pytest-Tested-00B0FF?style=for-the-badge&logo=pytest&logoColor=white" />
 
-  <!-- ⚙️ Backend Performance -->
-  <img src="https://img.shields.io/badge/Caching-Redis%20Enabled-F03C2E?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Optimized%20Queries-select__related%2C%20prefetch__related-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Monitoring-Prometheus-DA4FDD?style=for-the-badge&logo=prometheus&logoColor=white" />
+<br/><br/>
 
-  <br/><br/>
+<!-- ⚙️ Backend Performance -->
+<img src="https://img.shields.io/badge/Caching-Redis%20Enabled-F44336?style=for-the-badge&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/Queries-Optimized-8E24AA?style=for-the-badge&logo=database&logoColor=white" />
+<img src="https://img.shields.io/badge/Monitoring-Prometheus-E040FB?style=for-the-badge&logo=prometheus&logoColor=white" />
 
-  <!-- 🛡 Security -->
-  <img src="https://img.shields.io/badge/Auth-Django%20Auth%20%2B%20RBAC-0078D4?style=for-the-badge&logo=django&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTTPS-Enabled-FF6F00?style=for-the-badge&logo=letsencrypt&logoColor=white" />
+<br/><br/>
 
-  <br/><br/>
+<!-- 🛡 Security -->
+<img src="https://img.shields.io/badge/Auth-RBAC%20%2B%20Django-2962FF?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/HTTPS-LetsEncrypt-FF6D00?style=for-the-badge&logo=letsencrypt&logoColor=white" />
 
-  <!-- 🌍 Repo Status -->
-  <img src="https://img.shields.io/github/last-commit/<your-org-or-user>/<repo>?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/github/stars/<your-org-or-user>/<repo>?style=for-the-badge&logo=github&color=yellow" />
-  <img src="https://img.shields.io/github/forks/<your-org-or-user>/<repo>?style=for-the-badge&logo=github&color=blue" />
-  <img src="https://img.shields.io/github/issues/<your-org-or-user>/<repo>?style=for-the-badge&logo=github&color=red" />
+<br/><br/>
 
-  <br/><br/>
+<!-- 🌍 Repo Status -->
+<img src="https://img.shields.io/badge/Last%20Commit-Active-00E5FF?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/Stars-★★★★★-FFD600?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Forks-Growing-42A5F5?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Issues-Tracked-E53935?style=for-the-badge&logo=github&logoColor=white" />
+
+</p>
 
 
 ## 🛠️ Tech Stack
@@ -330,4 +332,5 @@ If you have any questions or need help, please:
 - [ ] Add export functionality (CSV/PDF)
 - [ ] Mobile-responsive design improvements
 - [ ] Advanced reporting and analytics
+
 
